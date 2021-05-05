@@ -2,3 +2,11 @@ language: java
 
 jdk:
   - oraclejdk8
+
+#指定分支，只有指定的分支提交时才会运行脚本
+branches:
+  only:
+    - master
+env:
+ global:
+   # 我将其添加到了travis-ci的环境变量中
